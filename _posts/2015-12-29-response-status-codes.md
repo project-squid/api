@@ -8,22 +8,7 @@ layout: nil
 
 Successes differ from errors in that their body may not be a simple response object with a code and a message. The headers however are consistent across all calls:
 
-* `GET`, `PUT`, `DELETE` returns `200 OK` on success,
-* `POST ` returns 201 on success,
-
-When [retrieving stuff](#get-stuff) for example:
-
-```Status: 200 OK```
-```{
-    {
-        id: thing_1,
-        name: 'My first thing'
-    },
-    {
-        id: thing_2,
-        name: 'My second thing'
-    }
-}```
+* `GET` return `200 OK` on success,
 
 ### Error
 
@@ -32,10 +17,10 @@ Error responses are simply returning [standard HTTP error codes](http://www.w3.o
 * The error code is sent back as a status header,
 * The body includes an object describing both the code and message (for debugging and/or display purposes),
 
-For a call with an invalid authentication token for example:
+For a call with an invalid hash format for instance:
 
-```Status: 401 Access denied```
+```Status: 400 Bad Request```
 ```{
-    code: 401,
-    message: 'Access denied: invalid authentication token.'
+    "code": "bad_hash",
+    "message": "Bad hash format"
 }```
