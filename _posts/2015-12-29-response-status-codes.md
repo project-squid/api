@@ -10,6 +10,14 @@ Successes differ from errors in that their body may not be a simple response obj
 
 * `GET` return `200 OK` on success,
 
+### Redirect
+
+The API calls that return a random work will return a redirect to a URL
+with the random work.
+
+```Status: 303 See Other```
+```Location: http://example.endpoint.io/works/28353```
+
 ### Error
 
 Error responses are simply returning [standard HTTP error codes](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) along with some additional information:
@@ -20,7 +28,6 @@ Error responses are simply returning [standard HTTP error codes](http://www.w3.o
 For a call with an invalid hash format for instance:
 
 ```Status: 400 Bad Request```
-```{
-    "code": "bad_hash",
-    "message": "Bad hash format"
-}```
+```
+   hash must be a 256-bit hexadecimal encoded value
+```
