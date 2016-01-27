@@ -1,5 +1,5 @@
 ---
-category: Squid
+category: Elog.io compatibility
 path: '/lookup/blockhash'
 title: 'Lookup a work by its calculated hash'
 type: 'GET'

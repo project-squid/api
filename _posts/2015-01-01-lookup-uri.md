@@ -1,5 +1,5 @@
 ---
-category: Squid
+category: Elog.io compatibility
 path: '/lookup/uri'
 title: 'Lookup a video by its URI'
 type: 'GET'
