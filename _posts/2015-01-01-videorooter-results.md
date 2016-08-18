@@ -1,6 +1,6 @@
 ---
 category: Videorooter internal API
-apipath: '/videorooter/results/<process_id>'
+apipath: '/videorooter/results/&lt;process_id>'
 title: 'Gets information about a previous search'
 type: 'GET'
 

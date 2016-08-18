@@ -1,6 +1,6 @@
 ---
 category: Elog.io compatibility
-apipath: '/works/<id>/media'
+apipath: '/works/&lt;id>/media'
 title: 'Get the media associated with a work'
 type: 'GET'
 
