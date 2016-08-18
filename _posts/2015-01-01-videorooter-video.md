@@ -1,6 +1,6 @@
 ---
 category: Videorooter internal API
-path: '/videorooter/video'
+apipath: '/videorooter/video'
 title: 'Submit a video to be processed / looked up'
 type: 'POST'
 

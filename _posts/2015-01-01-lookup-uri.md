@@ -1,6 +1,6 @@
 ---
 category: Elog.io compatibility
-path: '/lookup/uri'
+apipath: '/lookup/uri'
 title: 'Lookup a video by its URI'
 type: 'GET'
 

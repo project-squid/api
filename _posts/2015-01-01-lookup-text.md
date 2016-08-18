@@ -1,6 +1,6 @@
 ---
 category: Videorooter API
-path: '/lookup/text'
+apipath: '/lookup/text'
 title: 'Lookup a work by full text search of key fields'
 type: 'GET'
 

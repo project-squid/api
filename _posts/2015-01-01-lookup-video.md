@@ -1,6 +1,6 @@
 ---
 category: Videorooter API
-path: '/lookup/video'
+apipath: '/lookup/video'
 title: 'Lookup a video by its calculated hash'
 type: 'GET'
 
